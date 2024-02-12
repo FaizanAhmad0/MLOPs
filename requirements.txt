@@ -1,0 +1,35 @@
+$ git status
+git clone https://github.com/FaizanAhmad0/MLOPs.git
+Cloning into 'MLOPs'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+$ cd MLOPs
+$ git commit -m "First Commit"
+Author identity unknown$ git config --global user.email "i202653@nu.edu.pk"
+$ git branch dev
+$ git checkout dev
+Switched to branch 'dev'
+$ git pull origin
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.07 KiB | 43.00 KiB/s, done.
+From https://github.com/FaizanAhmad0/MLOPs
+   f9d41d7..1c7c935  dev        -> origin/dev
+You asked to pull from the remote 'origin', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+$ git fetch origin dev
+$ git pull origin dev
+From https://github.com/FaizanAhmad0/MLOPs
+ * branch            dev        -> FETCH_HEAD
+Updating f9d41d7..1c7c935
+Fast-forward
+ main.py | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+ create mode 100644 main.py
+$ git push origin dev
+Everything up-to-date
